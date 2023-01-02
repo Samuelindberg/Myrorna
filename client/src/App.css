@@ -1,0 +1,178 @@
+/* global */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;700&family=Quicksand:wght@300&family=Raleway:wght@100;300;400&family=Red+Hat+Display:ital,wght@0,300;0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200;400;500;700;900&display=swap");
+* {
+  font-family: "Raleway";
+  font-weight: 200;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.app {
+  overflow-x: hidden;
+}
+header {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  z-index: 3;
+  padding: 10px;
+  background-color: rgba(130, 213, 255, 0.69);
+  backdrop-filter: blur(20px) hue-rotate(90deg) brightness(0.9);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: lighter;
+}
+
+#logo {
+  white-space: nowrap;
+  padding: 0 10px;
+  color: rgba(0, 105, 157, 0.688);
+}
+
+/* intro page */
+.landing-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#landing-title {
+  width: 70%;
+  font-size: 3.5rem;
+  font-family: "Quicksand";
+  text-align: center;
+  z-index: 1;
+}
+
+#greenshirt-img {
+  width: 30%;
+  z-index: 2;
+}
+
+@media screen and (max-width: 900px) {
+  .landing-section-container {
+    flex-direction: column;
+  }
+
+  #greenshirt-img {
+    width: 60%;
+  }
+}
+
+/* hand picked section */
+.handpicked-section {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#handpicked-title {
+  font-size: 6rem;
+  width: 100%;
+}
+
+#hand {
+  opacity: 0;
+  transition: 1s;
+}
+
+/* handpicked cards */
+.handpicked-card-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  width: 100%;
+  text-align: end;
+}
+#handpicked-right {
+  text-align: start;
+}
+.handpicked-section {
+  width: 80%;
+}
+.handpicked-card-container img {
+  padding: 10px;
+  width: 20%;
+}
+.handpicked-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.handpicked-title {
+  font-size: 3rem;
+  border-bottom: 3px dotted black;
+}
+#handpicked-seemore {
+  width: 200px;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* handpicked page */
+.handpicked-page {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#handpicked-page-title {
+  font-size: 4rem;
+  font-weight: 400;
+  padding: 20px;
+}
+.handpicked-items-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.handpicked-item {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+#handpicked-item-title {
+  font-size: 1.7rem;
+  grid-column: 1/3;
+  font-weight: 400;
+}
+.handpicked-item img {
+  width: 100%;
+  grid-column: 1/3;
+}
+#handpicked-size {
+  text-align: end;
+}
+#handpicked-buy {
+  grid-column: 1/3;
+  text-align: center;
+  background-color: rgba(130, 213, 255, 0.69);
+  margin-top: 15px;
+  padding: 10px 0;
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
